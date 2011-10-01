@@ -44,7 +44,7 @@ auto.ambience <- function(audio, window.size = 4096, threshold = .996, smooth = 
   # below a given quantile threshold (usually set very high, e.g. 99.6%)
   spec[Mod(spec) < quantile(Mod(spec), threshold)] <- 0
 
-  # "compress" the amplitues
+  # "compress" the amplitudes
   spec <- sqrt(Mod(spec))
 
   for(i in 1:window.size) {
