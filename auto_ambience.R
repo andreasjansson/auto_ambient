@@ -23,7 +23,7 @@
 ##   input <- readMP3("claire_de_lune.mp3")
 ##   input <- downsample(input, 11025)
 ##   input <- mono(input)
-##   output <- ambify(input@left)
+##   output <- auto.ambience(input@left)
 ##   output <- Wave(output[[1]], output[[2]], bit=16, samp.rate=11025)
 ##   output <- normalize(output, "16")
 ##   writeWave(output, "claire_de_lune_ambient.wav")
